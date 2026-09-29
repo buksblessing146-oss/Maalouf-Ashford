@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #080808;
+  color: #D7D7D7;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
+}
+
+/* Luxury gold text and borders */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F3E7C4 0%, #D8AA42 45%, #B68A2F 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold-glow {
+  border-color: rgba(182, 138, 47, 0.35);
+  box-shadow: 0 0 25px -5px rgba(182, 138, 47, 0.15);
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #B68A2F 0%, #D8AA42 50%, #9B7324 100%);
+}
+
+.gold-border-gradient {
+  border-image: linear-gradient(to right, #B68A2F, #D8AA42, #8F6A1E) 1;
+}
+
+/* Custom scrollbar for dark luxury feel */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #26221A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #B68A2F;
+}
